@@ -1,0 +1,23 @@
+#TASK NAME -STUDENT GRADE TRACKER 
+
+
+print("welcome to simple student grade calculator")
+
+n=eval(input("enter number of subject:"))
+total=0
+for i in range(1,n+1):
+    marks=eval(input("enter marks of each subj:"))
+    total=total+marks 
+    average=total/n
+print(average)
+if average > 90:
+    print("grade-A,GPA=4.0")
+elif average > 80: 
+    print("grade=B,GPA=3.0")
+elif average > 70:
+    print("grade-C,GPA=2.0")
+elif average > 60: 
+    print("grade=D,GPA=1.0")
+else:
+    print("grade F.GPA=0.0")
+
